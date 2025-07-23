@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tina's Page</title>
+    <link rel="stylesheet" href="/tina.css" />
+    <!--連結css設定，更新npx到網頁看，要強制清除快取-->
+  </head>
+  <body>
+    <h1 class="gradient">Welcome to Tina's Page</h1>
+    <img
+      width="100%"
+      src="./banner.jpg"
+      alt="banner"
+    /><!--width改變寬度可用百分比也可以自訂px-->
+    <p class="green green-text">This is a new HTML file.</p>
+
+    <a href="https://www.npmjs.com/" target="_blank">Visit NPM</a
+    ><!--網頁超連結，target輸入顯示於網頁的文字-->
+  </body>
+  <body>
+    <h4 class="green">如何開始製作網站</h4>
+    <p id="pink">遵循以下步驟以創建自己的網站：</p>
+    <ol>
+      <li>選擇一個域名。</li>
+      <li>選擇一個網頁託管服務。</li>
+      <li>設計您的網站佈局。</li>
+      <li>開發您的網站內容。</li>
+      <li>發布您的網站。</li>
+    </ol>
+    <!--ol是數字ul是點-->
+    <img
+      src="./IMG_85A6AF426DF8-1.jpeg"
+      width="150px"
+      height="200px"
+      alt="圖片不出現文字替代"
+    />
+    <!--圖片先丟到資料夾，alt是圖片不如預期出現時用文字敘述，有利於SEO搜尋-->
+    <div>
+      <a
+        href="https://www.threads.com/@peng_0916/post/DLpKT1spnK3"
+        target="_blank"
+        >圖片來源</a
+      >
+    </div>
+    <div>
+      <!--div是容器，好分組，相較於p會比較常用到，所有CSS都可使用-->
+      表格製作
+      <table border="1" style="width: 100%">
+        <thead style="background-color: #fbe180">
+          <tr>
+            <th>隨便</th>
+            <th>亂打</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>table是製作表格</td>
+            <td>thead是表格標題</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>tbody是表格內文</td>
+            <td>tfoot是表格底部</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td align="center" colspan="3">tfoot是表格底部用來總結</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <main>
+      <table>
+        <form action="">
+          <input type="text" placeholder="請輸入你的疑問" /><br />
+          <input type="email" placeholder="請輸入你的Email" /><br />
+          <input
+            type="password"
+            placeholder="請輸入PWD"
+          /><!--PWD在輸入時，數字不會顯示在螢幕-->
+          <button type="submit">送出</button>
+          <div class="red">
+            製作勾選，你會了嗎？
+            <label><input type="checkbox" />是</label>
+            <label><input type="checkbox" />否</label>
+          </div>
+          <div>
+            <label><input type="checkbox" name="apple" />蘋果</label>
+            <label><input type="checkbox" name="banana" />香蕉</label>
+            <label><input type="checkbox" name="orange" />橘子</label>
+          </div>
+          <div>
+            <span>備註</span>
+            <textarea name="id"></textarea>
+          </div>
+          <div>
+            國家
+            <select name="country">
+              <option value="taiwan">台灣</option>
+              <option value="japan">日本</option>
+              <option value="usa">美國</option>
+              <option value="china">中國</option>
+            </select>
+          </div>
+        </form>
+      </table>
+    </main>
+  </body>
+  <body>
+    <h1>css效果</h1>
+    <div class="my-btn">Click Me!</div>
+    <div class="circle">圓圈效果</div>
+    <div
+      class="message"
+      data-count="10"
+      onclick="this.classList.toggle('move')"
+    >
+      message
+    </div>
+    <div class="box">
+      <div>hi hi hi hi</div>
+      <div>hi hi hi hi</div>
+      <div>hi hi hi hi</div>
+      <div>hi hi hi hi</div>
+      <div>hi hi hi hi</div>
+      <div>hi hi hi hi</div>
+      <div>hi hi hi hi</div>
+      <div class="box-center">center</div>
+    </div>
+    <div class="flex-box">
+      <div style="font-size: 0.5rem">content</div>
+      <div style="font-size: 0.5rem">content</div>
+      <div style="font-size: 0.5rem">content</div>
+      <div style="font-size: 0.5rem">content</div>
+      <div style="font-size: 0.5rem">content</div>
+      <div style="font-size: 0.5rem">content</div>
+      <div style="font-size: 0.5rem">content</div>
+    </div>
+  </body>
+</html>
