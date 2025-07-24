@@ -2,10 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+    initial-scale=1.0"
+      ,user-scalable="no"
+      ,maximum-scale="1.0"
+      ,minimum-scale="1.0"
+    />
     <title>Tina's Page</title>
     <link rel="stylesheet" href="/tina.css" />
-    <!--連結css設定，更新npx到網頁看，要強制清除快取-->
+    <script src="/index.js"></script>
   </head>
   <body>
     <h1 class="gradient">Welcome to Tina's Page</h1>
@@ -18,8 +25,6 @@
 
     <a href="https://www.npmjs.com/" target="_blank">Visit NPM</a
     ><!--網頁超連結，target輸入顯示於網頁的文字-->
-  </body>
-  <body>
     <h4 class="green">如何開始製作網站</h4>
     <p id="pink">遵循以下步驟以創建自己的網站：</p>
     <ol>
@@ -109,8 +114,6 @@
         </form>
       </table>
     </main>
-  </body>
-  <body>
     <h1>css效果</h1>
     <div class="my-btn">Click Me!</div>
     <div class="circle">圓圈效果</div>
@@ -140,5 +143,131 @@
       <div style="font-size: 0.5rem">content</div>
       <div style="font-size: 0.5rem">content</div>
     </div>
+    <style>
+      html {
+        font-size: calc(16px + 1vw);
+      }
+      .parent {
+        font-size: 20px;
+      }
+      .useem {
+        font-size: 1em;
+      }
+      .userem {
+        font-size: 1rem;
+      }
+    </style>
+    <div class="parent">
+      <div class="useem">em</div>
+      <div class="userem">rem</div>
+    </div>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .rwd-box {
+        width: 25%;
+        padding: 10px;
+      }
+      .card {
+        padding: 10px;
+        border: 1px solid black;
+      }
+      .card .img {
+        background-color: lightsalmon;
+        height: 100px;
+      }
+      .card .title {
+        font-size: 0.8em;
+        font-weight: bold;
+      }
+      .card .content {
+        font-size: 0.5em;
+        color: gray;
+      }
+      @media screen and (max-width: 480px) {
+        .rwd-box {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        .rwd-box {
+          width: 50%;
+        }
+      }
+      @media screen and (min-width: 769px) and (max-width: 1200px) {
+        .rwd-box {
+          width: 33%;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+      }
+    </style>
+    <div class="container">
+      <div class="rwd-box">
+        <div class="card">
+          <div class="img"></div>
+          <div class="title">Card Title</div>
+          <div class="content">Card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="img"></div>
+          <div class="title">Card Title</div>
+          <div class="content">Card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="img"></div>
+          <div class="title">Card Title</div>
+          <div class="content">Card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="img"></div>
+          <div class="title">Card Title</div>
+          <div class="content">Card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="img"></div>
+          <div class="title">Card Title</div>
+          <div class="content">Card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="img"></div>
+          <div class="title">Card Title</div>
+          <div class="content">Card content goes here.</div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .spinner {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: 5px solid rgba(255, 204, 0, 0.3);
+        border-top: 5px solid rgb(255, 174, 0);
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <div class="spinner"></div>
+    <!--旋轉動畫-->
   </body>
 </html>
