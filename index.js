@@ -104,24 +104,47 @@ false
 // console.log(whichIsBig(07, 22)) 
 
 //請用for迴圈做一個九九乘法表
-for (let i = 1; i < 10; i++) {
-    //console.log("i=",i);
-    for (let j = 1; j < 10; j++) {
-        //console.log("j=",j);
-        //console.log("ixj=",i*j);
+// for (let i = 1; i < 10; i++) {
+//     //console.log("i=",i);
+//     for (let j = 1; j < 10; j++) {
+//         //console.log("j=",j);
+//         //console.log("ixj=",i*j);
 
-        console.log(i +"*"+ j +"="+ i*j );
-        console.log("i=", i, ",j=", j, ",i*j=", i * j);
-    }
-    
-    console.log(" \n");//J已經從1~9跑完了 換行符號給他
-}// i從1到9
+//         console.log(i+"*"+j+"="+ i*j);
+//     }
+//     console.log(" \n");//J已經從1~9跑完了 換行符號給他
+// }// i從1到9
 
-  console.log("loop is end");// 迴圈結束
+//   console.log("loop is end");// 迴圈結束
+
 //成績判斷
 //95-100return "A+"
 //90-94 return "A"
 //80-89 return "B"
 //70 -79 return "C"
 //60-69 return "D"
-const checkscore = function(score) {}
+// const checkscore = function(score) {
+//     if (score >= 95 && score <= 100) {
+//         return "A+"
+//     } else if (score >= 90 && score <= 94) {
+//         return "A"
+//     } else if (score >= 80 && score <= 89) {
+//         return "B"
+//     } else if (score >= 70 && score <= 79) {
+//         return "C"
+//     } else if (score >= 60 && score <= 69) {
+//         return "D"
+//     } else {
+//         return "不及格"
+//     }
+// }
+// console.log(checkscore(100)); // A+
+// console.log(checkscore(95)); // A+
+// console.log(checkscore(90)); // A
+// console.log(checkscore(89)); // B
+// console.log(checkscore(80)); // B
+// console.log(checkscore(79)); // C
+// console.log(checkscore(70)); // C
+// console.log(checkscore(69)); // D
+// console.log(checkscore(60)); // D
+// console.log(checkscore(59)); // 不及格
